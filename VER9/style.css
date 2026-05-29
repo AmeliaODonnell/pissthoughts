@@ -1,0 +1,297 @@
+/* ==============================================
+
+CSS Variables
+---------------------------------------------- */
+
+:root {
+    /* global */
+    --font-f: "Helvetica";
+
+    /* colour */
+
+    /* full palette:
+    FFD644, FFD02A, FFC802, C99E05, B99100, FFC344, FFBA2A, FFAE02, C98A05, B97E00, FFEA44, FFE72A, FFE302, C9B305, B9A500
+    */
+
+    --bg-colour: #ffd644;
+    --txt-colour: #b97e00;
+    --link-colour: #b97e00;
+    --col4: #046865;
+    --col5: #ffba2a;
+
+    /* grid */
+    --grid-width-min: 56vw;
+    --grid-width-max: 95vw;
+    --grid-row-height: 12px;
+    --grid-padding-top: 25px;
+    --grid-gutter: 12px;
+
+    /* text */
+    --header-size: 1.75em;
+    --subheader-size: 0.5em;
+    --body-size: 0.5em;
+
+    /* scale calc */
+    --mobile-scale-txt: 1.5;
+    --desktop-scale-txt: 2.25;
+
+    --mobile-scale-grid: 2.25;
+    --desktop-scale-grid: 4;
+}
+
+/* ==============================================
+
+playground
+
+--------------------------------------------- */
+
+@keyframes scroll-right {
+    0% {
+        transform: translateX(-3%);
+        opacity: 0%;
+    }
+    100% {
+        transform: translateX(0%);
+        opacity: 100%;
+    }
+}
+
+@keyframes scroll-up {
+    0% {
+        transform: translateY(3%);
+        opacity: 0%;
+    }
+    100% {
+        transform: translateY(0%);
+        opacity: 100%;
+    }
+}
+
+/* ==============================================
+
+Base Styles
+
+--------------------------------------------- */
+
+/* general */
+
+* {
+    box-sizing: border-box;
+    font-family: var(--font-f);
+}
+
+body {
+    background-color: var(--bg-colour);
+}
+
+.grid-top {
+    grid-template-areas:
+        ". hd hd hd hd hd hd hd hd hd hd . "
+        ". hd hd hd hd hd hd hd hd hd hd . "
+        ". hd hd hd hd hd hd hd hd hd hd . "
+        ". tl tl tl tl tl tl tl tl tl tl ."
+        ". lnk lnk lnk lnk lnk lnk lnk lnk lnk lnk ."
+        ". lnk lnk lnk lnk lnk lnk lnk lnk lnk lnk .";
+
+    margin: auto;
+    width: var(--grid-width-max);
+    padding-top: var(--grid-padding-top);
+
+    display: grid;
+    grid-template-columns: repeat(12, [col-start] 1fr);
+    grid-auto-rows: var(--grid-row-height);
+    gap: var(--grid-gutter);
+}
+.grid-bleed-top {
+    grid-row: 1 / 5;
+    grid-column: 1 /-1;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-top: calc(50% - 100vh);
+    background-color: var(--col5);
+}
+
+h1 {
+    color: var(--txt-colour);
+    margin: 0;
+    font-size: var(--header-size);
+    padding: 0;
+    overflow: hidden;
+}
+
+h2 {
+    color: var(--txt-colour);
+    margin: 0;
+    font-size: var(--subheader-size);
+}
+
+p {
+    color: var(--txt-colour);
+    margin: 0;
+    font-size: var(--body-size);
+}
+
+a {
+    color: var(--link-colour);
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+.container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.logo {
+    width: 100%;
+    height: 100%;
+    grid-column: 2 / span 5;
+    grid-row: 1 / span 5;
+    overflow: hidden;
+    animation: scroll-up 0.3s ease-out;
+}
+
+.logo > img {
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+}
+
+.links {
+    text-align: center;
+    text-justify: inter-word;
+    grid-area: lnk;
+    font-size: var(--subheader-size);
+    overflow: hidden;
+    animation: scroll-right 0.3s ease-out;
+    animation-delay: 0.1s;
+}
+
+.links ul {
+    list-style: none;
+    margin-inline-start: 0;
+    padding-inline-start: 0;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.links li {
+    float: center;
+    font-size: var(--subheader-size);
+}
+
+.links li:hover {
+    background-color: var(--col5);
+}
+
+.tagline {
+    color: var(--txt-colour);
+    margin: 0px 0px;
+    font-size: var(--subheader-size);
+    word-wrap: break-word;
+    text-align: center;
+    grid-area: tl;
+    overflow: hidden;
+    animation: scroll-right 0.25s ease-out;
+}
+.title-header {
+    text-align: center;
+    grid-area: hd;
+    animation: scroll-right 0.25s ease-out;
+}
+
+/*
+-------------------------
+
+medias
+
+*/
+
+/* mobile */
+
+@media (min-width: 350px) {
+    .grid-top {
+        padding-top: calc(var(--grid-padding-top) * var(--mobile-scale-grid));
+        grid-auto-rows: calc(var(--grid-row-height) * var(--mobile-scale-grid));
+    }
+    h1 {
+        font-size: calc(var(--header-size) * var(--mobile-scale-txt));
+    }
+
+    h2 {
+        font-size: calc(var(--subheader-size) * var(--mobile-scale-txt));
+    }
+
+    p {
+        font-size: calc(var(--body-size) * var(--mobile-scale-txt));
+    }
+
+    .title-header {
+        text-align: center;
+    }
+
+    .tagline {
+        font-size: calc(var(--subheader-size) * var(--mobile-scale-txt));
+    }
+
+    .links li {
+        font-size: calc(var(--subheader-size) * var(--mobile-scale-txt));
+    }
+}
+
+/* desktop */
+
+@media (min-width: 768px) {
+    .grid-top {
+        grid-template-areas:
+            ". . . hd hd hd hd hd hd hd hd . "
+            ". . . hd hd hd hd hd hd hd hd . "
+            ". . . hd hd hd hd hd hd hd hd . "
+            ". . . tl tl tl tl tl tl tl tl ."
+            ". . . lnk lnk lnk lnk lnk lnk lnk lnk .";
+
+        width: var(--grid-width-min);
+        padding-top: calc(var(--grid-padding-top) * var(--desktop-scale-grid));
+        grid-auto-rows: calc(
+            var(--grid-row-height) * var(--desktop-scale-grid)
+        );
+    }
+
+    .grid-top * {
+        text-align: right;
+    }
+
+    h1 {
+        font-size: calc(var(--header-size) * var(--desktop-scale-txt));
+    }
+
+    h2 {
+        font-size: calc(var(--subheader-size) * var(--desktop-scale-txt));
+    }
+
+    .links li {
+        font-size: calc(var(--subheader-size) * var(--desktop-scale-txt));
+    }
+
+    .tagline {
+        font-size: calc(var(--subheader-size) * var(--desktop-scale-txt));
+    }
+
+    .links {
+        font-size: calc(var(--subheader-size) * var(--desktop-scale-txt));
+    }
+
+    .links li {
+        float: right;
+    }
+
+    .links li > a {
+        padding-left: calc(var(--grid-gutter) * 2);
+    }
+}
