@@ -202,7 +202,7 @@ a {
     overflow: hidden;
     animation: scroll-right 0.25s ease-out;
 }
-.title-header {
+.homepage-header {
     text-align: center;
     grid-area: hd;
     animation: scroll-right 0.25s ease-out;
@@ -232,10 +232,6 @@ medias
 
     p {
         font-size: calc(var(--body-size) * var(--mobile-scale-txt));
-    }
-
-    .title-header {
-        text-align: center;
     }
 
     .tagline {
