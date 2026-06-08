@@ -17,6 +17,8 @@ $content = $Parsedown->text(file_get_contents($file));
     require "../../header.php";
     ?>
 	<body>
-    <?= $content ?>
+	<div class = "page-content">
+        <?= $content ?>
+	</div>
 	</body>
 </html>

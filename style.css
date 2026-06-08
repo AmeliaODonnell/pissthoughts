@@ -65,6 +65,16 @@ playground
         transform: translateY(0%);
         opacity: 100%;
     }
+@keyframes scroll-down {
+    0% {
+        transform: translateY(-40%);
+        opacity: 0%;
+    }
+    100% {
+        transform: translateY(0%);
+        opacity: 100%;
+    }
+}
 }
 
 /* ==============================================
@@ -94,7 +104,8 @@ body {
         ". hd hd hd hd hd hd hd hd hd hd . "
         ". . . tl tl tl tl tl tl . . ."
         ". . . lnk lnk lnk lnk lnk lnk . . ."
-        ". . . lnk lnk lnk lnk lnk lnk . . .";
+        ". . . lnk lnk lnk lnk lnk lnk . . ."
+        ". . . pc pc pc pc pc pc . . .";
 
     margin: auto;
     width: var(--grid-width-max);
@@ -217,6 +228,13 @@ a {
     animation: scroll-right 0.25s ease-out;
 }
 
+.page-content {
+    grid-area: pc;
+    animation: scroll-up 0.25s ease-out;
+    animation-delay: 0.15s;
+}
+
+}
 /*
 -------------------------
 
@@ -250,6 +268,7 @@ medias
     .links li {
         font-size: calc(var(--subheader-size) * var(--mobile-scale-txt));
     }
+
 }
 
 /* desktop */
@@ -261,17 +280,14 @@ medias
             ". . . hd hd hd hd hd hd hd hd . "
             ". . . hd hd hd hd hd hd hd hd . "
             ". . . tl tl tl tl tl tl tl tl ."
-            ". . . lnk lnk lnk lnk lnk lnk lnk lnk .";
+            ". . . lnk lnk lnk lnk lnk lnk lnk lnk ."
+            ". pc pc pc pc pc pc pc pc pc pc .";
 
         width: var(--grid-width-min);
         padding-top: calc(var(--grid-padding-top) * var(--desktop-scale-grid));
         grid-auto-rows: calc(
             var(--grid-row-height) * var(--desktop-scale-grid)
         );
-    }
-
-    .grid-top * {
-        text-align: right;
     }
 
     h1 {
@@ -287,10 +303,12 @@ medias
     }
 
     .tagline {
+        text-align: right;
         font-size: calc(var(--subheader-size) * var(--desktop-scale-txt));
     }
 
     .links {
+        text-align: right;
         font-size: calc(var(--subheader-size) * var(--desktop-scale-txt));
     }
 
@@ -313,6 +331,9 @@ medias
     .grid-bleed-top-home {
         grid-row: 1 / 5;
     }
-
+    .homepage-header {
+        text-align: right;
+    }
+    }
 
 }

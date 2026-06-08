@@ -4,9 +4,13 @@
     $title = "piss blog";
     require "../../header.php";
     ?>
+    <div class = "page-content">
+            <div>
 		    <h1>
 						hello
 			</h1>
+            </div>
+            <div>
 		    <?php $files = glob("posts/*.md"); ?>
 						<ul>
 						    <?php foreach ($files as $file): ?>
@@ -17,6 +21,8 @@
 							</li>
 							<?php endforeach; ?>
 						</ul>
+            </div>
 		</div>
+	</div>
 	</body>
 </html>
