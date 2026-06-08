@@ -1,17 +1,9 @@
 <!DOCTYPE html>
 <html lang="en-AU">
     <?php
-    $title = "piss thoughts";
+    $title = "piss blog";
     require "../../header.php";
     ?>
-    <head>
-        		<link rel="stylesheet" href="../../style.css" />
-    </head>
-	<style>
-
-	</style>
-	<body>
-		<div class="grid-top">
 		    <h1>
 						hello
 			</h1>

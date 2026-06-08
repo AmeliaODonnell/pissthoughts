@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en-AU">
-    <?php
-    $title = "piss thoughts";
-    require "header.php";
-    ?>
+    <head>
+		<title>
+		piss thoughts
+		</title>
+		<meta charset="utf-8">
+		<meta name = "viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="style.css" />
+	</head>
 	<body>
 		<div class="grid-top">
-		    <div class="grid-bleed-top">
+		    <div class="grid-bleed-top-home">
 			</div>
 			<div class="logo">
 			  <img src="img/main-logo.png">
@@ -23,7 +27,7 @@
 			</div>
 			<div class="links" >
 				<ul>
-				<li><a href="pages/blog">blog</a></li>
+				<li><a href="/amelia-website/pages/blog">blog</a></li>
 				<li><a href="url">X gallery X</a></li>
 				<li><a href="url">X contact X</a></li>
 				</ul>
