@@ -1,11 +1,10 @@
 name = "pee-thoughts"
 compatibility_date = "2026-07-04"
+workers_dev = false
 
 [assets]
 directory = "./output"
 
-workers_dev = false
-
 [[routes]]
-pattern = "pee-thoughts.net/*"
+pattern = "pee-thoughts.net"
 custom_domain = true
