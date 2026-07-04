@@ -1,0 +1,5 @@
+name = "pee-thoughts"
+compatibility_date = "2026-07-04"
+
+[assets]
+directory = "./output"
