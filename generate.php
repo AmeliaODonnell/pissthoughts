@@ -4,7 +4,7 @@
 if (!is_dir("output")) {
     mkdir("output");
 }
-copy("styles.css", "output/styles.css");
+copy("style.css", "output/style.css");
 
 ob_start();
 require __DIR__ . "/index.php";
