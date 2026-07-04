@@ -11,8 +11,8 @@
         <div class="grid-bleed-top">
         </div>
      			<div class="homepage-header">
-				<a href="/amelia-website">
-					PISS THOUGHTS
+				<a href="/">
+					pee thoughts
 				</a>
 				<div class="links" >
 					<ul>
