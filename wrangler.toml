@@ -3,3 +3,9 @@ compatibility_date = "2026-07-04"
 
 [assets]
 directory = "./output"
+
+workers_dev = false
+
+[[routes]]
+pattern = "pee-thoughts.net/*"
+custom_domain = true
