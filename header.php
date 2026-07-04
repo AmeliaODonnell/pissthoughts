@@ -16,7 +16,7 @@
 				</a>
 				<div class="links" >
 					<ul>
-					<li><a href="/amelia-website/pages/blog">blog</a></li>
+					<li><a href="/pages/blog">blog</a></li>
 					<li><a href="url">X gallery X</a></li>
 					<li><a href="url">X contact X</a></li>
 					</ul>
