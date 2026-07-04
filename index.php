@@ -17,12 +17,12 @@
 			</div>
 			<div class="homepage-header">
 				<h1>
-					PISS<br>THOUGHTS
+					pee<br>thoughts
 				</h1>
 			</div>
 			<div class="tagline">
 				<h2 class="scrolls">
-				it's a nice day.
+				destination: urination!
 				</h2>
 			</div>
 			<div class="links" >

@@ -10,14 +10,18 @@ CSS Variables
     /* colour */
 
     /* full palette:
-    FFD644, FFD02A, FFC802, C99E05, B99100, FFC344, FFBA2A, FFAE02, C98A05, B97E00, FFEA44, FFE72A, FFE302, C9B305, B9A500
+    --honeydew: #e2efdeff;
+    --ash-grey: #afd0bfff;
+    --grey-olive: #808f87ff;
+    --faded-copper: #9b7e46ff;
+    --sunlit-clay: #f4b266ff;
     */
 
-    --bg-colour: #ffd644;
-    --txt-colour: #b97e00;
-    --link-colour: #b97e00;
+    --bg-colour: #f4b266ff;
+    --txt-colour: #9b7e46ff;
+    --link-colour: #9b7e46ff;
     --col4: #046865;
-    --col5: #ffba2a;
+    --col5: #e2efdeff;
 
     /* grid */
     --grid-width-min: 56vw;
@@ -223,6 +227,7 @@ a {
     animation: scroll-right 0.25s ease-out;
 }
 .homepage-header {
+    float: center;
     text-align: center;
     grid-area: hd;
     animation: scroll-right 0.25s ease-out;
@@ -326,7 +331,6 @@ medias
     }
     .grid-bleed-top {
         grid-row: 1 / 3;
-    }
     }
     .grid-bleed-top-home {
         grid-row: 1 / 5;
