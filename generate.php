@@ -1,11 +1,19 @@
 <?php
 
-/* homepage/root */
+/* root */
 if (!is_dir("output")) {
     mkdir("output");
 }
+
+if (is_dir("img")) {
+    mkdir("output/img", 0755, true);
+    foreach (glob("img/*") as $image) {
+        copy($image, "output/img/" . basename($image));
+    }
+}
 copy("style.css", "output/style.css");
 
+/* homepage */
 ob_start();
 require __DIR__ . "/index.php";
 $content = ob_get_clean();
