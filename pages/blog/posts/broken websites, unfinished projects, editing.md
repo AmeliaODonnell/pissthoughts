@@ -1,4 +1,4 @@
-![15 05 2026](/home/amelia/public_html/amelia-website/pages/blog/posts/photos/3cd5796fea163a4b32b308b4c6e8322be35463d3.jpeg)  
+![15 05 2026](/home/amelia/public_html/amelia-website/pages/blog/posts/photos/3cd5796fea163a4b32b308b4c6e8322be35463d3.jpeg)
 
 # broken websites, unfinished projects, editing
 
@@ -15,7 +15,7 @@ when i was 16ish i was a low-effort machine. every other day i'd be making beats
 
 
 anyway.  
-![23 06 2026](/home/amelia/public_html/amelia-website/pages/blog/posts/photos/a4df925d82a7b13ab43d0dae9f35ed33cd50551d.jpeg)  
+![23 06 2026](/home/amelia/public_html/amelia-website/img/photos/1219b278cb08c0e7182fce45e207940220bc11d7.jpeg)  
 i don't finish things because i let my mind run away on future possibilities. i can't focus on what's in front of me. it has to all mean something.   
 
 
@@ -30,7 +30,7 @@ i want this site to be a sort of dumping ground. a full stop. sort of the way di
 
 my singing teacher said something along the lines of this: everyone needs someone to tell them no. ermmm, sort of burdensome to ask someone to be your personal contrarian. for free. maybe putting things "out there" will emulate that experience, let me see my work how others see it. or maybe it's a cope and a distraction from the things i wish i wanted to be doing.  
 
-![Image](/home/amelia/public_html/amelia-website/pages/blog/posts/photos/c1b0a174db1d779a637126f1cec29a05eaaf1ee9.jpeg)  
+![Image](/home/amelia/public_html/amelia-website/img/photos/b911f26848e3138848d093695c9d1e887861e5ef.jpeg)  
 
 my mind feels cluttered sometimes and i wish i could apply design-by-subtraction to my thoughts. but spend too long cutting and you'll end up with perfect, docile nothing.  
 
