@@ -11,6 +11,13 @@ if (is_dir("img")) {
         copy($image, "output/img/" . basename($image));
     }
 }
+if (is_dir("img/photos")) {
+    mkdir("output/img/photos", 0755, true);
+    foreach (glob("img/photos*") as $image) {
+        copy($image, "output/img/photos" . basename($image));
+    }
+}
+
 copy("style.css", "output/style.css");
 
 /* homepage */
