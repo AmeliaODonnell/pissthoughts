@@ -25,6 +25,8 @@ jobs:
           command: deploy
       - name: Build site
         run: php generate.php && ls -la output/
+      - name: Install ImageMagick
+        run: sudo apt-get install -y imagemagick
       - name: Compress images
         run: |
           for img in output/images/*; do
