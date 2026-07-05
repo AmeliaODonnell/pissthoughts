@@ -48,6 +48,11 @@ foreach ($files as $file) {
     ob_start();
     require __DIR__ . "/pages/blog/post.php";
     $content = ob_get_clean();
+    $content = str_replace(
+        "/home/amelia/public_html/amelia-website/",
+        "/",
+        $content,
+    );
     file_put_contents("output/pages/blog/posts/" . $slug . ".html", $content);
 }
 ?>
