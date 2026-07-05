@@ -29,6 +29,6 @@ jobs:
         run: sudo apt-get install -y imagemagick
       - name: Compress images
         run: |
-          for img in output/images/*; do
+          for img in output/img/*; do
           convert "$img" -strip -interlace Plane -quality 65 -resize "1920x1920>" "$img"
           done
