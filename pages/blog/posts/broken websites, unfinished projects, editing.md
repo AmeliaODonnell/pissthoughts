@@ -1,4 +1,4 @@
-![15 05 2026](/home/amelia/public_html/amelia-website/img/photos/f4a55bdb156f1afe855e8e37f7103a691773c867.jpeg)  
+![15 05 2026](/home/amelia/public_html/amelia-website/pages/blog/posts/images/9e2edc6c92e818a9c03206f6937af44f90003f27.jpeg)  
 
 # broken websites, unfinished projects, editing
 
@@ -7,7 +7,7 @@
 when i was 16ish i was a low-effort machine. every other day i'd be making beats in ableton live, uploading to soundcloud. i'd read somewhere that you need to make 10,000 of something to master it, something like that, and i took the literal approach "50 a week and i'll be there by 25!" people cared more the less effort i put in. my most famous one was a 30 second loop i didn't even bother to mix properly. later blew up on tiktok.   
 
 anyway.  
-![23 06 2026](/home/amelia/public_html/amelia-website/img/photos/1219b278cb08c0e7182fce45e207940220bc11d7.jpeg)  
+![23 06 2026](/home/amelia/public_html/amelia-website/pages/blog/posts/images/5afbbe3da7bf9f6c526243680c9ca4c801a28459.jpeg)  
 i don't finish things because i let my mind run away on future possibilities. i can't focus on what's in front of me. it has to all mean something.   
 
 i've always been more of an editor than a creator. i love freeing up walkways. i love how spaces expand and how everything that's left feels like it has purpose.  

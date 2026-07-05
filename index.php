@@ -12,9 +12,6 @@
 		<div class="grid-top">
 		    <div class="grid-bleed-top-home">
 			</div>
-			<div class="logo">
-			  <img src="img/main-logo.png">
-			</div>
 			<div class="homepage-header">
 				<h1>
 					pee<br>thoughts

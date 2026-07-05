@@ -31,13 +31,13 @@ CSS Variables
     --grid-gutter: 12px;
 
     /* text */
-    --header-size: 2.25em;
-    --subheader-size: 0.75em;
-    --body-size: 0.5em;
+    --header-size: 3.5rem;
+    --subheader-size: 1.5rem;
+    --body-size: 1rem;
 
     /* scale calc */
-    --mobile-scale-txt: 1.5;
-    --desktop-scale-txt: 1.75;
+    --mobile-scale-txt: 1;
+    --desktop-scale-txt: 1;
 
     --mobile-scale-grid: 2.25;
     --desktop-scale-grid: 3;
@@ -50,13 +50,14 @@ playground
 --------------------------------------------- */
 
 @keyframes scroll-right {
+    to { opacity: 100%; }
     0% {
         transform: translateX(-3%);
-        opacity: 0%;
     }
+
     100% {
         transform: translateX(0%);
-        opacity: 100%;
+
     }
 }
 
@@ -89,9 +90,15 @@ Base Styles
 
 /* general */
 
+
+
 * {
     box-sizing: border-box;
     font-family: var(--font-f);
+}
+
+html {
+    font-size: 100%;
 }
 
 body {
@@ -194,8 +201,10 @@ a {
     grid-area: lnk;
     font-size: var(--subheader-size);
     overflow: hidden;
-    animation: scroll-right 0.3s ease-out;
+
+    animation: scroll-right 0.3s ease forwards;
     animation-delay: 0.1s;
+    opacity: 0;
 }
 
 .links ul {
@@ -224,19 +233,25 @@ a {
     text-align: center;
     grid-area: tl;
     overflow: hidden;
-    animation: scroll-right 0.25s ease-out;
+
+    animation: scroll-right 0.25s ease forwards;
+    opacity: 0;
 }
 .homepage-header {
     float: center;
     text-align: center;
     grid-area: hd;
-    animation: scroll-right 0.25s ease-out;
+
+    animation: scroll-right 0.25s ease forwards;
+    opacity: 0;
 }
 
 .page-content {
     grid-area: pc;
-    animation: scroll-up 0.25s ease-out;
+
+    animation: scroll-up 0.25s ease forwards;
     animation-delay: 0.15s;
+    opacity: 0;
 }
 
 }
