@@ -25,3 +25,8 @@ jobs:
           command: deploy
       - name: Build site
         run: php generate.php && ls -la output/
+      - name: Compress images
+        run: |
+          for img in output/images/*; do
+          convert "$img" -strip -interlace Plane -quality 65 -resize "1920x1920>" "$img"
+          done

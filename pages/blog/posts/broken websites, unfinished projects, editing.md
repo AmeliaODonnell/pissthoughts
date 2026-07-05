@@ -2,6 +2,10 @@
 
 # broken websites, unfinished projects, editing
 
+04/04/2026
+
+
+
 *perfect is the enemy of good, good is the enemy of passable. all in all, i wish i could just finish the fucking thing.*  
 
 when i was 16ish i was a low-effort machine. every other day i'd be making beats in ableton live, uploading to soundcloud. i'd read somewhere that you need to make 10,000 of something to master it, something like that, and i took the literal approach "50 a week and i'll be there by 25!" people cared more the less effort i put in. my most famous one was a 30 second loop i didn't even bother to mix properly. later blew up on tiktok.   
