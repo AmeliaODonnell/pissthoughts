@@ -9,9 +9,8 @@
 		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
+	<div class="bg">
 		<div class="grid-top">
-		    <div class="grid-bleed-top-home">
-			</div>
 			<div class="homepage-header">
 				<h1>
 					pee<br>thoughts
@@ -24,10 +23,11 @@
 			</div>
 			<div class="links" >
 				<ul>
-				<li><a href="/pages/blog">blog</a></li>
-				<li><a href="url">X gallery X</a></li>
-				<li><a href="url">X contact X</a></li>
+				<li><a href="/pages/blog">blogblogblogblogblogblogblogblogblogblogblogblogblogblogblogblogblogblogblogblogblogblogblogblogblogblogblog</a></li>
+				<li><a href="url">tbc</a></li>
+				<li><a href="url">tbc</a></li>
 				</ul>
 			</div>
+		</div>
 	</body>
 </html>

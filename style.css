@@ -5,7 +5,7 @@ CSS Variables
 
 :root {
     /* global */
-    --font-f: "Helvetica";
+    --font-f: "Brush Script MT";
 
     /* colour */
 
@@ -17,16 +17,16 @@ CSS Variables
     --sunlit-clay: #f4b266ff;
     */
 
-    --bg-colour: #f4b266ff;
-    --txt-colour: #9b7e46ff;
-    --link-colour: #9b7e46ff;
+    --bg-colour: #000000;
+    --txt-colour: #ff0000;
+    --link-colour: #ff0000;
     --col4: #046865;
     --col5: #e2efdeff;
 
     /* grid */
     --grid-width-min: 56vw;
     --grid-width-max: 95vw;
-    --grid-row-height: 16px;
+    --grid-row-height: 2rem;
     --grid-padding-top: 25px;
     --grid-gutter: 12px;
 
@@ -80,6 +80,11 @@ playground
         opacity: 100%;
     }
 }
+
+@keyframes pan {
+  0%   { transform: translateX(-5%); }
+  100% { transform: translateX(5%); }
+}
 }
 
 /* ==============================================
@@ -95,29 +100,33 @@ Base Styles
 * {
     box-sizing: border-box;
     font-family: var(--font-f);
+
+
+
 }
 
 html {
     font-size: 100%;
+    background-color: var(--bg-colour);
+
 }
 
 body {
-    background-color: var(--bg-colour);
+}
+
+.bg {
+    height: 100%;
+    width: 100%;
+    background-image: url('img/IMG_0385.svg');
+    background-position: center;
+    background-size: cover;
+    animation: pan 20s linear infinite alternate;
+    z-index: -1;
+    inset: -10%;
+    background-repeat: no-repeat;
 }
 
 .grid-top {
-    grid-template-areas:
-        ". lg lg lg lg lg lg lg lg lg lg . "
-        ". lg lg lg lg lg lg lg lg lg lg . "
-        ". lg lg lg lg lg lg lg lg lg lg . "
-        ". hd hd hd hd hd hd hd hd hd hd . "
-        ". hd hd hd hd hd hd hd hd hd hd . "
-        ". hd hd hd hd hd hd hd hd hd hd . "
-        ". . . tl tl tl tl tl tl . . ."
-        ". . . lnk lnk lnk lnk lnk lnk . . ."
-        ". . . lnk lnk lnk lnk lnk lnk . . ."
-        ". . . pc pc pc pc pc pc . . .";
-
     margin: auto;
     width: var(--grid-width-max);
     padding-top: var(--grid-padding-top);
@@ -126,6 +135,10 @@ body {
     grid-template-columns: repeat(12, [col-start] 1fr);
     grid-auto-rows: var(--grid-row-height);
     gap: var(--grid-gutter);
+
+
+
+
 }
 .grid-bleed-top {
     grid-row: 1 / 3;
@@ -151,6 +164,7 @@ h1 {
     font-size: var(--header-size);
     padding: 0;
     overflow: hidden;
+
 }
 
 h2 {
@@ -184,7 +198,8 @@ a {
 .logo {
     width: 100%;
     height: 100%;
-    grid-area: lg;
+    grid-row: 1;
+    grid-column: span 12;
     overflow: hidden;
     animation: scroll-up 0.3s ease-out;
 }
@@ -198,7 +213,8 @@ a {
 .links {
     text-align: center;
     text-justify: inter-word;
-    grid-area: lnk;
+    grid-row: 5;
+    grid-column: span 12;
     font-size: var(--subheader-size);
     overflow: hidden;
 
@@ -231,17 +247,17 @@ a {
     font-size: var(--subheader-size);
     word-wrap: break-word;
     text-align: center;
-    grid-area: tl;
+    grid-row: 4;
+    grid-column: span 12;
     overflow: hidden;
 
     animation: scroll-right 0.25s ease forwards;
     opacity: 0;
 }
 .homepage-header {
-    float: center;
     text-align: center;
-    grid-area: hd;
-
+    grid-row: 1;
+    grid-column: span 12;
     animation: scroll-right 0.25s ease forwards;
     opacity: 0;
 }
