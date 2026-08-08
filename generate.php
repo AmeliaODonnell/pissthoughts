@@ -8,13 +8,17 @@ if (!is_dir("output")) {
 if (is_dir("img")) {
     mkdir("output/img", 0755, true);
     foreach (glob("img/*") as $image) {
-        copy($image, "output/img/" . basename($image));
+        if (is_file($image)) {
+            copy($image, "output/img/" . basename($image));
+        }
     }
 }
 if (is_dir("img/photos")) {
     mkdir("output/img/photos", 0755, true);
-    foreach (glob("img/photos*") as $image) {
-        copy($image, "output/img/photos" . basename($image));
+    foreach (glob("img/photos/*") as $image) {
+        if (is_file($image)) {
+            copy($image, "output/img/photos/" . basename($image));
+        }
     }
 }
 
