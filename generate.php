@@ -51,6 +51,11 @@ foreach ($files as $file) {
     $slug = basename($file, ".txt");
     $_GET["slug"] = $slug;
 
+    $slug = basename($file, ".txt");
+    $slug = strtolower($slug);
+    $slug = preg_replace('/[^a-z0-9]+/', '-', $slug);
+    $slug = trim($slug, '-');
+
     ob_start();
     require __DIR__ . "/pages/blog/post.php";
     $content = ob_get_clean();
