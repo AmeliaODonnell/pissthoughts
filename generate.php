@@ -48,7 +48,7 @@ if (!is_dir("output/pages/blog/posts")) {
 }
 
 foreach ($files as $file) {
-    $slug = basename($file, ".md");
+    $slug = basename($file, ".txt");
     $_GET["slug"] = $slug;
 
     ob_start();
