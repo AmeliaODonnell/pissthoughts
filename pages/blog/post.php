@@ -1,7 +1,7 @@
 <?php
 
 $slug = $_GET["slug"];
-$file = __DIR__ . "/posts/" . $slug . ".md";
+$file = __DIR__ . "/posts/" . $slug . ".txt";
 if (!file_exists($file)) {
     die("Pee not found");
 }

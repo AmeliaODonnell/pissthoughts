@@ -40,6 +40,8 @@ require __DIR__ . "/pages/blog/index.php";
 $content = ob_get_clean();
 file_put_contents("output/pages/blog/index.html", $content);
 
+$files = glob(__DIR__ . "/pages/blog/posts/*.txt");
+
 /* posts */
 if (!is_dir("output/pages/blog/posts")) {
     mkdir("output/pages/blog/posts", 0755, true);
