@@ -30,8 +30,8 @@ jobs:
       - name: Compress images
         run: |
           if [ -d output/img ] && [ "$(ls -A output/img)" ]; then
-            find output/img -type f | while read img; do
-              echo "Processing: $img"
-              convert "$img" -strip -interlace Plane -quality 85 -resize "2000x2000>" "$img"
-            done
+           find output/img -type f ! -name "*.svg" | while read img; do
+            echo "Processing: $img"
+            convert "$img" -strip -interlace Plane -quality 85 -resize "2000x2000>" "$img"
+           done
           fi

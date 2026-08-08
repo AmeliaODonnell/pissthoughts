@@ -11,7 +11,7 @@
 			</h1>
             </div>
             <div>
-		    <?php $files = glob(__DIR__ . "/posts/*.md"); ?>
+		    <?php $files = glob(__DIR__ . "/posts/*.txt"); ?>
 						<ul>
 						    <?php foreach ($files as $file): ?>
 							<li>
