@@ -15,8 +15,8 @@
 						<ul>
 						    <?php foreach ($files as $file): ?>
 							<li>
-							    <a href="posts/<?= basename($file, ".md") ?>.html">
-											<?= basename($file, ".md") ?>
+							    <a href="posts/<?= basename($file, ".txt") ?>.html">
+											<?= basename($file, ".txt") ?>
 								</a>
 							</li>
 							<?php endforeach; ?>
