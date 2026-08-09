@@ -16,7 +16,9 @@ $content = nl2br(htmlspecialchars(file_get_contents($file)));
     ?>
 	<body>
 	<div class = "page-content">
-        <?= $content ?>
+	    <p>
+            <?= $content ?>
+	    </p>
 	</div>
 	</body>
 </html>
