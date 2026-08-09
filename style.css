@@ -5,7 +5,7 @@ CSS Variables
 
 :root {
     /* global */
-    --font-f: "Brush Script MT";
+    --font-f: "Helvetica, Arial, sans-serif";
 
     /* colour */
 
@@ -18,10 +18,10 @@ CSS Variables
     */
 
     --bg-colour: #000000;
-    --txt-colour: #ff0000;
-    --link-colour: #ff0000;
-    --col4: #046865;
-    --col5: #e2efdeff;
+    --txt-colour: #ffffff;
+    --link-colour: #ffffff;
+    --col4: #ffffff;
+    --col5: #ffffff;
 
     /* grid */
     --grid-width-min: 56vw;
@@ -117,7 +117,6 @@ body {
 .bg {
     height: 100%;
     width: 100%;
-    background-image: url('img/IMG_0385.svg');
     background-position: center;
     background-size: cover;
     animation: pan 20s linear infinite alternate;
@@ -126,6 +125,7 @@ body {
     background-repeat: no-repeat;
 }
 
+/*
 .grid-top {
     margin: auto;
     width: var(--grid-width-max);
@@ -135,11 +135,8 @@ body {
     grid-template-columns: repeat(12, [col-start] 1fr);
     grid-auto-rows: var(--grid-row-height);
     gap: var(--grid-gutter);
-
-
-
-
 }
+
 .grid-bleed-top {
     grid-row: 1 / 3;
     grid-column: 1 /-1;
@@ -157,7 +154,7 @@ body {
     margin-top: calc(50% - 100vh);
     background-color: var(--col5);
 }
-
+*/
 h1 {
     color: var(--txt-colour);
     margin: 0;
@@ -198,8 +195,6 @@ a {
 .logo {
     width: 100%;
     height: 100%;
-    grid-row: 1;
-    grid-column: span 12;
     overflow: hidden;
     animation: scroll-up 0.3s ease-out;
 }
@@ -213,8 +208,6 @@ a {
 .links {
     text-align: center;
     text-justify: inter-word;
-    grid-row: 5;
-    grid-column: span 12;
     font-size: var(--subheader-size);
     overflow: hidden;
 
@@ -247,8 +240,6 @@ a {
     font-size: var(--subheader-size);
     word-wrap: break-word;
     text-align: center;
-    grid-row: 4;
-    grid-column: span 12;
     overflow: hidden;
 
     animation: scroll-right 0.25s ease forwards;
@@ -256,15 +247,11 @@ a {
 }
 .homepage-header {
     text-align: center;
-    grid-row: 1;
-    grid-column: span 12;
     animation: scroll-right 0.25s ease forwards;
     opacity: 0;
 }
 
 .page-content {
-    grid-area: pc;
-
     animation: scroll-up 0.25s ease forwards;
     animation-delay: 0.15s;
     opacity: 0;
@@ -281,10 +268,6 @@ medias
 /* mobile */
 
 @media (min-width: 350px) {
-    .grid-top {
-        padding-top: calc(var(--grid-padding-top) * var(--mobile-scale-grid));
-        grid-auto-rows: calc(var(--grid-row-height) * var(--mobile-scale-grid));
-    }
     h1 {
         font-size: calc(var(--header-size) * var(--mobile-scale-txt));
     }
@@ -310,22 +293,6 @@ medias
 /* desktop */
 
 @media (min-width: 968px) {
-    .grid-top {
-        grid-template-areas:
-            ". . . hd hd hd hd hd hd hd hd . "
-            ". . . hd hd hd hd hd hd hd hd . "
-            ". . . hd hd hd hd hd hd hd hd . "
-            ". . . tl tl tl tl tl tl tl tl ."
-            ". . . lnk lnk lnk lnk lnk lnk lnk lnk ."
-            ". pc pc pc pc pc pc pc pc pc pc .";
-
-        width: var(--grid-width-min);
-        padding-top: calc(var(--grid-padding-top) * var(--desktop-scale-grid));
-        grid-auto-rows: calc(
-            var(--grid-row-height) * var(--desktop-scale-grid)
-        );
-    }
-
     h1 {
         font-size: calc(var(--header-size) * var(--desktop-scale-txt));
     }
@@ -359,12 +326,6 @@ medias
     .logo {
         grid-column: 2 / span 5;
         grid-row: 1 / span 5;
-    }
-    .grid-bleed-top {
-        grid-row: 1 / 3;
-    }
-    .grid-bleed-top-home {
-        grid-row: 1 / 5;
     }
     .homepage-header {
         text-align: right;

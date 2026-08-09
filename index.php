@@ -24,8 +24,6 @@
 			<div class="links" >
 				<ul>
 				<li><a href="/pages/blog">blogblogblogblogblogblogblogblogblogblogblogblogblogblogblogblogblogblogblogblogblogblogblogblogblogblogblog</a></li>
-				<li><a href="url">tbc</a></li>
-				<li><a href="url">tbc</a></li>
 				</ul>
 			</div>
 		</div>
